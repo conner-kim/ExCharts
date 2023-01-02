@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomMarkerView" customModule="ChartsApp" customModuleProvider="target">
+            <connections>
+                <outlet property="boxView" destination="OeB-Pm-OWE" id="BF0-bx-PHK"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="QJb-xZ-l7b"/>
+                <outlet property="titleLabel" destination="HwJ-ew-4FJ" id="sbv-lN-gD0"/>
+                <outlet property="valueLabel" destination="XbX-CZ-MjK" id="7Yt-6s-Ui8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="259"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeB-Pm-OWE">
+                    <rect key="frame" x="0.0" y="0.0" width="79" height="58"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwJ-ew-4FJ">
+                            <rect key="frame" x="18.666666666666671" y="4" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbX-CZ-MjK">
+                            <rect key="frame" x="18.666666666666671" y="29" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="HwJ-ew-4FJ" firstAttribute="top" secondItem="OeB-Pm-OWE" secondAttribute="top" constant="4" id="Tu8-7O-gGy"/>
+                        <constraint firstAttribute="height" priority="68" constant="63" id="Wwl-eB-4Le"/>
+                        <constraint firstItem="XbX-CZ-MjK" firstAttribute="top" secondItem="HwJ-ew-4FJ" secondAttribute="bottom" constant="4" id="bKH-Gm-V2F"/>
+                        <constraint firstAttribute="bottom" secondItem="XbX-CZ-MjK" secondAttribute="bottom" constant="8" id="cu7-s5-383"/>
+                        <constraint firstItem="HwJ-ew-4FJ" firstAttribute="centerX" secondItem="OeB-Pm-OWE" secondAttribute="centerX" id="ggn-sK-IIP"/>
+                        <constraint firstItem="XbX-CZ-MjK" firstAttribute="centerX" secondItem="OeB-Pm-OWE" secondAttribute="centerX" id="voR-6D-Jla"/>
+                        <constraint firstAttribute="width" constant="79" id="x0y-SR-Bce"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OeB-Pm-OWE" secondAttribute="trailing" priority="250" id="EbW-eO-DRE"/>
+                <constraint firstAttribute="bottom" secondItem="OeB-Pm-OWE" secondAttribute="bottom" priority="250" id="oMU-zb-QsQ"/>
+                <constraint firstItem="OeB-Pm-OWE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pMh-UW-IqR"/>
+                <constraint firstItem="OeB-Pm-OWE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="u7n-wC-JaK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="8.3969465648854964" y="-189.08450704225353"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

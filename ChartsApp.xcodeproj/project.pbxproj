@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13597A2A2962B901004919B9 /* CustomMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13597A282962B901004919B9 /* CustomMarkerView.swift */; };
+		13597A2D2962B952004919B9 /* CustomMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13597A2C2962B952004919B9 /* CustomMarkerView.xib */; };
 		13C0ED032962A40900FA86EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0ED022962A40900FA86EF /* AppDelegate.swift */; };
 		13C0ED052962A40900FA86EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0ED042962A40900FA86EF /* SceneDelegate.swift */; };
 		13C0ED072962A40900FA86EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0ED062962A40900FA86EF /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		02DA0FDC4A4280F735A874AF /* Pods-ChartsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsApp.debug.xcconfig"; path = "Target Support Files/Pods-ChartsApp/Pods-ChartsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		13597A282962B901004919B9 /* CustomMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerView.swift; sourceTree = "<group>"; };
+		13597A2C2962B952004919B9 /* CustomMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMarkerView.xib; sourceTree = "<group>"; };
 		13C0ECFF2962A40900FA86EF /* ChartsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0ED022962A40900FA86EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C0ED042962A40900FA86EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13597A252962B8D1004919B9 /* Marker */ = {
+			isa = PBXGroup;
+			children = (
+				13597A282962B901004919B9 /* CustomMarkerView.swift */,
+				13597A2C2962B952004919B9 /* CustomMarkerView.xib */,
+			);
+			path = Marker;
+			sourceTree = "<group>";
+		};
 		13C0ECF62962A40800FA86EF = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +76,7 @@
 		13C0ED012962A40900FA86EF /* ChartsApp */ = {
 			isa = PBXGroup;
 			children = (
+				13597A252962B8D1004919B9 /* Marker */,
 				13C0ED022962A40900FA86EF /* AppDelegate.swift */,
 				13C0ED042962A40900FA86EF /* SceneDelegate.swift */,
 				13C0ED062962A40900FA86EF /* ViewController.swift */,
@@ -88,7 +102,6 @@
 				02DA0FDC4A4280F735A874AF /* Pods-ChartsApp.debug.xcconfig */,
 				B861913A4F18586485FCB069 /* Pods-ChartsApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13C0ED0F2962A40A00FA86EF /* LaunchScreen.storyboard in Resources */,
+				13597A2D2962B952004919B9 /* CustomMarkerView.xib in Resources */,
 				13C0ED0C2962A40A00FA86EF /* Assets.xcassets in Resources */,
 				13C0ED0A2962A40900FA86EF /* Main.storyboard in Resources */,
 			);
@@ -207,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13597A2A2962B901004919B9 /* CustomMarkerView.swift in Sources */,
 				13C0ED072962A40900FA86EF /* ViewController.swift in Sources */,
 				13C0ED032962A40900FA86EF /* AppDelegate.swift in Sources */,
 				13C0ED052962A40900FA86EF /* SceneDelegate.swift in Sources */,

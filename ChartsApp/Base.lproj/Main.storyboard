@@ -18,22 +18,33 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbr-Np-7ak" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="58.999999999999986" width="393" height="196.66666666666663"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bbr-Np-7ak" secondAttribute="height" multiplier="2:1" id="NEv-KP-r8f"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8o-lb-Htx" customClass="CombinedChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="255.66666666666663" width="393" height="196.33333333333337"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="B8o-lb-Htx" secondAttribute="height" multiplier="2:1" id="RlW-89-UN3"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B8o-lb-Htx" secondAttribute="trailing" id="Faf-fM-Ud8"/>
                             <constraint firstItem="bbr-Np-7ak" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OhJ-au-T50"/>
+                            <constraint firstItem="B8o-lb-Htx" firstAttribute="top" secondItem="bbr-Np-7ak" secondAttribute="bottom" id="j1f-kn-GrX"/>
+                            <constraint firstItem="B8o-lb-Htx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="npF-SP-k8x"/>
                             <constraint firstItem="bbr-Np-7ak" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pAf-BH-H0O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bbr-Np-7ak" secondAttribute="trailing" id="uuQ-52-ecy"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="barChartView" destination="bbr-Np-7ak" id="9ux-JS-136"/>
+                        <outlet property="combinedChartView" destination="B8o-lb-Htx" id="K4Y-Tg-u1c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -44,6 +55,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
